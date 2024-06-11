@@ -1,6 +1,9 @@
+import os, django
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'setup.settings')
 django.setup()
 
-from faker import Faker
+from faker import Faker #pip install faker==4.12.0
 from validate_docbr import CPF
 import random
 from clientes.models import Cliente
